@@ -9,9 +9,34 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/bxslider.css" />
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="preload animate__animated animate__bounce">
+      <div id="spinSquares">
+        <div class="spinSquar" id="spinSquar_1"></div>
+        <div class="spinSquar" id="spinSquar_2"></div>
+        <div class="spinSquar" id="spinSquar_3"></div>
+        <div class="spinSquar" id="spinSquar_4"></div>
+        <div class="spinSquar" id="spinSquar_5"></div>
+        <div class="spinSquar" id="spinSquar_6"></div>
+        <div class="spinSquar" id="spinSquar_7"></div>
+        <div class="spinSquar" id="spinSquar_8"></div> 
+        <div class="spinSquars" id="spinSquar_9"></div>
+        <div class="spinSquars" id="spinSquar_10"></div>
+        <div class="spinSquars" id="spinSquar_11"></div>
+        <div class="spinSquars" id="spinSquar_12"></div>
+        <div class="spinSquars" id="spinSquar_13"></div>
+        <div class="spinSquars" id="spinSquar_14"></div>
+        <div class="spinSquars" id="spinSquar_15"></div>
+        <div class="spinSquars" id="spinSquar_16"></div>       
+      </div>
+    </div>
     <div class="topheader">
       <nav>
         <ol class="primary-nav">
@@ -501,25 +526,24 @@
           <span></span>
           <p>Оставьте свои данные в форме ниже и мы с вами свяжемся</p>
         </div>
-        <form action="">
+        <form method="post" id="send_form">
           <div class="row">
             <div class="col-md-6 col-6 textinput">
               <p>Имя<span>*</span></p>
-              <input type="text" id="name">
+              <input type="text" id="name" name="name">
             </div>
             <div class="col-md-6 col-6 textinput">
               <p>Электронная почта<span>*</span></p>
-              <input type="text" id="e-mail">
+              <input type="text" id="e-mail" name="email">
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 col-12 textmsg">
               <p>Комментарий</p>
-              <textarea id="msg" cols="30" rows="10"></textarea>
-              <input type="button" class="submit" value="Отправить запрос">
+              <textarea id="msg" cols="30" rows="10" name="msg"></textarea>
+              <input id="send" type="button" class="submit" value="Отправить запрос">
             </div>
           </div>
-          <
         </form>
       </section>
       <section class="map container" id="office">
@@ -554,6 +578,7 @@
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/jquery.accordion.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

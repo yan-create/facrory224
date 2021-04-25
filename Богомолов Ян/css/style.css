@@ -28,7 +28,7 @@ body {
     height: 80px;
 }
 
-.top-header.is-fixed a {
+.top-header.is-fixed a{
     margin-top: 0;
 }
 
@@ -484,4 +484,138 @@ footer h4 {
 .portfolio-wrapper:hover .imgDisc2 {
     visibility: visible;
     opacity: 1;
+}
+
+.send_success {
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(1, 255, 1, 0.3);
+    border: 2px solid rgba(1, 255, 1, 0.3);
+}
+
+.send_fail {
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(255, 1, 1, 0.3);
+    border: 2px solid rgba(255, 1, 1, 0.3);
+}
+#send_form {
+    transition: all 1s ease-out;
+}
+
+/* preloader */
+
+.preload {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 99999;
+}
+
+#spinSquares {
+    position: relative;
+    width: 234px;
+    height: 28px;
+    margin: auto;
+    top: 50%;
+}
+
+.spinSquar {
+    position: absolute;
+    top: 0;
+    width: 550px;
+    height: 2px;
+    background-color: #041dfd;
+    animation-name: spinningSquares;
+    animation-duration: 1.5s;
+    animation-iteration-count:unset;
+    animation-direction: alternate;
+}
+
+.spinSquars {
+    position: absolute;
+    top: 0;
+    width: 550px;
+    height: 2px;
+    background-color: #f71707ea;
+    animation-name: spinningSquares;
+    animation-duration: 1.5s;
+    animation-iteration-count: unset;
+    animation-direction: alternate;
+}
+
+#spinSquar_1 {
+    left:0;
+    animation-delay: 0.1s;
+}
+
+#spinSquar_2 {
+    left:50px;
+    animation-delay: 0.5s;
+}
+#spinSquar_3 {
+    left:100px;
+    animation-delay: 1s;
+}
+#spinSquar_4 {
+    left:150px;
+    animation-delay: 1.5s;
+}
+#spinSquar_5 {
+    left:200px;
+    animation-delay: 2.0s;
+}
+#spinSquar_6 {
+    left:250px;
+    animation-delay: 2.5s;
+}
+#spinSquar_7 {
+    left:300px;
+    animation-delay: 3s;
+}
+#spinSquar_8 {
+    left:350px;
+    animation-delay: 3.5s;
+}
+
+#spinSquar_9{
+    right:0px;
+    animation-delay: 0.1s
+}
+
+#spinSquar_10{
+    right:50px;
+    animation-delay: 0.5s
+}
+
+#spinSquar_11{
+    right:100px;
+    animation-delay:1s
+}
+
+#spinSquar_12{
+    right:150px;
+    animation-delay: 1.5s
+}
+
+#spinSquar_13{
+    right:200px;
+    animation-delay: 2s
+}
+
+#spinSquar_14{
+    right:250px;
+    animation-delay: 2.5s
+}
+
+#spinSquar_15{
+    right:300px;
+    animation-delay: 3s
+}
+
+#spinSquar_16{
+    right:350px;
+    animation-delay: 3.5s
+}
+@keyframes spinningSquares {
+    0% {transform: scale(1);}
+    100% {transform: scale(0.3) rotate(90deg);}
 }
